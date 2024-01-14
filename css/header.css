@@ -1,0 +1,100 @@
+.header__top {
+  background: linear-gradient(
+    90.09deg,
+    #3800af 0%,
+    #bf7204 97.52%,
+    #c27500 100%,
+    #c27500 100%
+  );
+  padding: 20px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.header__top-text {
+  max-width: 166px;
+  width: 100%;
+  font-family: var(--CR);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #fff;
+}
+
+.header__top-icon {
+  font-size: 50px;
+  color: white;
+}
+
+.header__top-icon:hover {
+  color: green;
+}
+
+.header__nav {
+  padding: 30px 0;
+  background: #010305cc;
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav-logo {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.header__nav-logo-img {
+  width: 104px;
+  height: 42px;
+}
+
+.header__nav-logo-span {
+  font-family: var(--CB);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: white;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-list-item-link {
+  color: var(--white);
+  font-family: "MR";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  padding: 42px 15px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.header__nav-list-item-link:hover {
+  color: var(--lightOrange);
+}
+
+.header__nav-list-item-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  border-radius: 20px 20px 0px 0px;
+  background: var(--lightOrange);
+  transition: 0.3s;
+}
+
+.header__nav-list-item-link:hover::after {
+  width: 100%;
+}
