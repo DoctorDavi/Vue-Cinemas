@@ -7,18 +7,18 @@
 }
 
 :root {
-  --bg: #040D1F;
-  --orange: #F18128;
-  --lightOrange: #ED8E00;
+  --bg: #040d1f;
+  --orange: #f18128;
+  --lightOrange: #ed8e00;
   --white: #fff;
-  --grey: #C8C8C8;
+  --grey: #c8c8c8;
   --black: #000;
-  --CB: 'CB', sans-serif;
-  --CR: 'CB', sans-serif;
-  --MB: 'CB', sans-serif;
-  --MR: 'CB', sans-serif;
-  --RR: 'CB', sans-serif;
-  --RM: 'CB', sans-serif;
+  --CB: "CB", sans-serif;
+  --CR: "CR", sans-serif;
+  --MB: "MB", sans-serif;
+  --MR: "MR", sans-serif;
+  --RR: "RR", sans-serif;
+  --RM: "RM", sans-serif;
 }
 
 body {
@@ -33,4 +33,25 @@ body {
   height: 100%;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  background: var(--orange);
+  color: var(--black);
+  color: #000;
+  font-family: 'RM';
+  font-size: 14px;
+  font-weight: 500;
+  width: 166px;
+  height: 46px;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--bg);
+  color: var(--white);
 }

@@ -1,3 +1,11 @@
+.header {
+  position: relative;
+  height: 100svh;
+  max-height: 940px;
+  display: flex;
+  flex-direction: column;
+}
+
 .header__top {
   background: linear-gradient(
     90.09deg,
@@ -11,6 +19,7 @@
   align-items: center;
   justify-content: center;
   gap: 24px;
+  flex: 0 0 auto;
 }
 
 .header__top-text {
@@ -35,6 +44,8 @@
 .header__nav {
   padding: 30px 0;
   background: #010305cc;
+  position: sticky;
+  flex: 0 0 auto;
 }
 
 .header__wrap {
@@ -97,4 +108,25 @@
 
 .header__nav-list-item-link:hover::after {
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .header__wrap {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .header__nav-list-item-link {
+    padding: 30px 15px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .header__nav-list-item-link {
+    padding: 30px 0;
+  }
+
+  .header__nav-list {
+    gap: 15px;
+  }
 }
